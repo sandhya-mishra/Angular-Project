@@ -1,0 +1,424 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+<nav class="nav" id="nav-bar">
+  <div  class="nav-search">
+    <input type="text"
+    #searchInput
+     (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="HERE YOU GO WITH YOUR CHO!CE" />
+    <button (click)="submitSearch(searchInput.value)">SEARCH</button>
+    <ul class="suggested-result"  *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div >
+    <!-- <ul *ngSwitchCase="'default'"> -->
+    <ul *ngIf="menuType=='default'">
+      <li><a routerLink="/">HOME</a></li>
+      <li><a (click)="onSeller()">SELLER</a></li>
+      <li><a routerLink="user-auth">LOGIN/SIGN-UP</a></li>
+      <li><a routerLink="cart-page">CART({{cartItems}})</a></li>
+    </ul>
+    <!-- user navigation -->
+    <!-- <ul *ngSwitchCase="'user'"> -->
+      <ul *ngIf="menuType=='user'">
+      <li><a routerLink="/">HOME</a></li>
+      <li><a routerLink="seller-auth">SELLER</a></li>
+      <li><a>{{userName | titlecase}}</a></li>
+      <li><a routerLink="my-orders">MY ORDERS</a></li>
+
+      <li><a (click)="userLogout()">LOGOUT</a></li>
+      <li><a [routerLink]="cartItems>0? 'cart-page':null">CART({{cartItems}})</a></li>
+    </ul>
+
+  </div>
+  <div>
+    <!-- <ul *ngSwitchCase="'seller'"> -->
+    <ul *ngIf="menuType=='seller'">
+      <li><a routerLink="seller-home">PRODUCT LIST</a></li>
+      <li><a routerLink="seller-add-product">ADD PRODUCT</a></li>
+      <li><a (click)="logout()">LOGOUT</a></li>
+      <li><a routerLink="/">SELLER HOME</a></li>
+      <li><a href="#">{{sellerName | titlecase}}</a></li>
+      <li><a [routerLink]="cartItems>0? 'cart-page':null">CART({{cartItems}})</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- NAV BAR CODE end-->
+
+
+<!-- search bar -->
+<div class="head">
+  <h1 routerLink="">SHELL TO SHORE</h1>
+</div>
+<!-- <div class="container">
+
+    <div class="search" *ngIf="menuType==='default'">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="search-1">
+            <i class='bx bx-search-alt'></i> <input type="text" placeholder="Here you go with your cho!ce">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <div class="search-2">
+              <i class='bx bxs-map'></i>
+              <input type="text" placeholder="" style="color: black;">
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+<!-- CAROUSEL CODING -->
+
+<div class="container-fluid">
+  <div class="" style="margin-top: 30px;">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img src="assets/header1.webp" alt="Random first slide" style="height: auto; width: 100%;">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img src="assets/header2.webp" alt="Random second slide" style="height: auto; width: 100%;">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img src="assets/header3.webp" alt="Random third slide" style="height: auto; width: 100%;">
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div> <!-- end of container-fluid -->
+<div class="midsection">
+  <img src="assets/3.jpg" alt="mid1" style="border-radius: 5px; width: auto; height: 90px;">
+  <img src="assets/4.jpg" alt="mid2"
+    style="border-radius: 5px; width: auto; height: 90px; justify-content: space-between; padding-left: 40px;">
+  <img src="assets/5.jpg" alt="mid3"
+    style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">
+  <img src="assets/6.jpg" alt="mid4"
+    style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">
+  <img src="assets/7.gif" alt="mid5"
+    style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">
+  <img src="assets/8.jpg" alt="mid6"
+    style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">
+  <img src="assets/13.jpg" alt="mid6"
+    style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">
+  <img src="assets/14.jpg" alt="mid6"
+    style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">
+  <img src="assets/15.jpg" alt="mid6"
+    style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">
+  <!-- <img src="assets/16.jpg" alt="mid6" style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">
+    <img src="assets/17.jpg" alt="mid6" style="border-radius: 5px; width: auto; height: 90px;justify-content: space-between;padding-left: 40px;">  -->
+</div>
+<div class="imageslider">
+  <img src="assets/imageslide.gif" alt="mid1" style=" width:100%; height: 50px;">
+</div>
+<br><br>
+<div class="uiimage">
+  <img src="assets/logo4.png" alt="mid1" style=" width:400px; height:400px;">
+  <img src="assets/logo111.png" alt="mid1"
+    style=" width:400px; height:400px;justify-content: space-between; padding-left: 60px;">
+</div>
+
+<!-- MID section -->
+
+<div class="product-list-wrapper">
+  <h1>TRENDY</h1>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="product-item">
+        <img src="assets/img1.jpg" alt="img" routerLink="home">
+      </div>
+    </div>
+  
+    <div class="col-sm-3">
+      <div class="product-item">
+        <img src="assets/img4.jpg" alt="img">
+      </div>
+    </div>
+    
+    <div class="col-sm-3">
+      <div class="product-item">
+        <img src="assets/img2.jpg" alt="img">
+      </div>
+    </div>
+      
+    <div class="col-sm-3">
+      <div class="product-item">
+        <img src="assets/img3.jpg" alt="img">
+      </div>
+    </div>
+  
+    <div class="col-sm-3">
+      <div class="product-item">
+        <img src="assets/img5.jpg" alt="img">
+      </div>
+    </div>
+  
+  
+    <div class="col-sm-3">
+      <div class="product-item">
+        <img src="assets/img7.jpg" alt="img">
+      </div>
+    </div>
+  
+  
+    <div class="col-sm-3">
+      <div class="product-item">
+        <img src="assets/img9.jpg" alt="img">
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="product-item">
+        <img src="assets/img11.jpg" alt="img">
+      </div>
+  </div>
+
+
+  <div class="col-sm-3">
+    <div class="product-item">
+      <img src="assets/img12.jpg" alt="img">
+    </div>
+</div>
+
+
+  <div class="col-sm-3">
+    <div class="product-item">
+      <img src="assets/img13.jpg" alt="img" routerLink="">
+    </div>
+</div>
+
+
+  <div class="col-sm-3">
+    <div class="product-item">
+      <img src="assets/img16.jpg" alt="img">
+    </div>
+</div>
+
+  <div class="col-sm-3">
+    <div class="product-item">
+      <img src="assets/img8.jpg" alt="img">
+    </div>
+</div>
+</div>
+</div>
+
+
+<!-- 
+<div class="div" style="background-color: brown;">
+  <app-user-auth></app-user-auth>
+
+</div> -->
+<!-- FOOTER PAGE -->
+
+<footer id="dk-footer" class="dk-footer" style="bottom: 0;">
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-lg-4">
+<div class="dk-footer-box-info">
+<a href="" class="footer-logo">
+<img src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_960_720.png" alt="footer_logo" class="img-fluid">
+</a>
+<p class="footer-info-text">
+WHOEVER SAID THAT MONEY CAN'T BUY HAPPINESS SIMPLY DIDN'T KNOW WHERE TO GO SHOPPING..😎
+</p>
+<div class="footer-social-link">
+<h3>Follow us</h3>
+<ul>
+    <li>
+        <a href="#">
+            <i class="fa fa-facebook"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-google-plus"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </li>
+</ul>
+</div>
+<!-- End Social link -->
+</div>
+<!-- End Footer info -->
+<!-- <div class="footer-awarad">
+<img src="https://mir-s3-cdn-cf.behance.net/projects/404/33245f162160979.Y3JvcCwxOTAyLDE0ODcsMCwyMDc.png" alt="">
+<p>Best Design Company 2023</p>
+</div> -->
+</div>
+<!-- End Col -->
+<div class="col-md-12 col-lg-8">
+<div class="row">
+<div class="col-md-6">
+<div class="contact-us">
+    <div class="contact-icon">
+        <i class="fa fa-map-o" aria-hidden="true"></i>
+    </div>
+    <!-- End contact Icon -->
+    <div class="contact-info">
+        <h3>Gurugram India</h3>
+        <p>401, Spaze Platinum Tower, Sector - 47, Sohna Road, Gurgaon-122001</p>
+    </div>
+    <!-- End Contact Info -->
+</div>
+<!-- End Contact Us -->
+</div>
+<!-- End Col -->
+<div class="col-md-6">
+<div class="contact-us contact-us-last">
+    <div class="contact-icon">
+        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+    </div>
+    <!-- End contact Icon -->
+    <div class="contact-info">
+        <h3>95 711 9 5353</h3>
+        <p>Give us a call</p>
+    </div>
+    <!-- End Contact Info -->
+</div>
+<!-- End Contact Us -->
+</div>
+<!-- End Col -->
+</div>
+<!-- End Contact Row -->
+<div class="row">
+<div class="col-md-12 col-lg-6">
+<div class="footer-widget footer-left-widget">
+    <div class="section-heading">
+        <h3>Useful Links</h3>
+        <span class="animate-border border-black"></span>
+    </div>
+    <ul>
+        <li>
+            <a href="#">HOME</a>
+        </li>
+        <li>
+            <a href="#">LOGIN</a>
+        </li>
+        <li>
+            <a href="#">VIEW CART</a>
+        </li>
+        <li>
+            <a href="#">LOGOUT</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="#">CUSTOMER CARE</a>
+        </li>
+        <li>
+            <a href="#">RETURN POLICY</a>
+        </li>
+        <li>
+            <a href="#">PAYMENTS</a>
+        </li>
+        <li>
+            <a href="#">SHELL TO SHORE STORIES</a>
+        </li>
+    </ul>
+</div>
+<!-- End Footer Widget -->
+</div>
+<!-- End col -->
+<div class="col-md-12 col-lg-6">
+<div class="footer-widget">
+    <div class="section-heading">
+        <h3>Subscribe</h3>
+        <span class="animate-border border-black"></span>
+    </div>
+    <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+    STAY HOME & SHOP ONLINE..YOU ARE TOO PRETTY TO HAVE TO LOOK FOR A PARKING SPOT..***</p>
+    <form action="#">
+        <div class="form-row">
+            <div class="col dk-footer-form">
+                <input type="email" class="form-control" placeholder="Email Address">
+                <button type="submit">
+                    <i class="fa fa-send"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+    <!-- End form -->
+</div>
+<!-- End footer widget -->
+</div>
+<!-- End Col -->
+</div>
+<!-- End Row -->
+</div>
+<!-- End Col -->
+</div>
+<!-- End Widget Row -->
+</div>
+<!-- End Contact Container -->
+
+
+<div class="copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<span>Copyright © 2023, All Right Reserved Sandhya Mishra</span>
+</div>
+<!-- End Col -->
+<div class="col-md-6">
+<div class="copyright-menu">
+<ul>
+    <li>
+        <a href="#">Home</a>
+    </li>
+    <li>
+        <a href="#">Terms</a>
+    </li>
+    <li>
+        <a href="#">Privacy Policy</a>
+    </li>
+    <li>
+        <a href="#">Contact</a>
+    </li>
+</ul>
+</div>
+</div>
+<!-- End col -->
+</div>
+<!-- End Row -->
+</div>
+<!-- End Copyright Container -->
+</div>
+<!-- End Copyright -->
+<!-- Back to top -->
+<div id="nav-bar" class="back-to-top">
+<button class="btn btn-dark" title="Back to Top" style="display: block;" id="nav-bar">
+<i class="fa fa-angle-up"></i>
+</button>
+</div>
+<!-- End Back to top -->
+</footer>
+
+

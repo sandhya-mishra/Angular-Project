@@ -1,0 +1,66 @@
+.checkout h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+
+}
+.checkout h3{
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.checkout h4{
+    /* margin-left: 10px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+.common-form{
+    text-align: center;
+    display: flex;
+    display: inline-flex;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+}
+.form input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px;
+    border-radius: 2px;
+    color: tomato;
+    box-shadow: 0px 4px 3px  white !important;
+    /* box-shadow: 0px 4px 3px  #0a1d37 !important; */
+}
+.form-button{
+    display: block;
+	 /* width: 100%;  */
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	 background-size: 200%; 
+	font-size: 1rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+    background-color: #fe4e02;
+    box-shadow: 0px 7px 20px #fe4e02 !important;
+    color: #fff;
+    /* font-weight: 700;
+    font-size: 15px; */
+}
+.form-button :hover{
+	background-position: right;
+} 
+.message-p{
+    color: green;
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+<!-- <h1>Home Page</h1> -->
+<div class="product-list-wrapper">
+    <h1>TRENDY</h1>
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let item of trendyProducts">
+        <div class="product-item">
+          <img src="{{item.image}}" alt="" />
+        
+        <div class="product-details">
+          <h6 class="name-head">{{item.name}}</h6>
+            <!-- <h6 class="name-head">Rustorangep <p>Women Maroon & Grey Printed A-Line Dress</p></h6> -->
+            <div class="product-price">
+                <h6>Price:{{item.price}}</h6>
+            </div>
+            <div class="product-color">
+                <h6>Color:{{item.color}}</h6>
+            </div>
+        </div>
+        <div class="product-footer"> 
+            <a routerLink="/details/{{item.id}}">View Details</a>
+            <a routerLink="cart-page">Add to Cart</a>
+        </div>
+    </div>
+      </div>
+<!-- 
+      <div class="col-sm-3">
+        <div class="product-item">
+          <img src="assets/imglink2.jpeg" alt="img">
+        
+        <div class="product-details">
+            <h6 class="name-head">Wedding Western <p>Women Green Lehenga</p></h6>
+            <div class="product-price">
+                <h6>Price:50,499</h6>
+            </div>
+            <div class="product-color">
+                <h6>Color:Green</h6>
+            </div>
+        </div>
+        <div class="product-footer">
+            <a href="">View Details</a>
+            <a href="">Add to Cart</a>
+        </div>
+    </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="product-item">
+          <img src="assets/imglink3.jpeg" alt="img">
+        
+        <div class="product-details">
+            <h6 class="name-head">Midas Touch Gown<p>Women Green Lehenga</p></h6>
+            <div class="product-price">
+                <h6>Price:1,00,000</h6>
+            </div>
+            <div class="product-color">
+                <h6>Color:Golden</h6>
+            </div>
+        </div>
+        <div class="product-footer">
+            <a routerLink="/details/{{item.id}}">View Details</a>
+            <a href="">Add to Cart</a>
+        </div>
+    </div>
+      </div> -->
+    </div>
+  </div>

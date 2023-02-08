@@ -1,0 +1,16 @@
+<div class="add-product">
+    <h1>Add new product</h1>
+    <p class="p-message">{{addProductMessage}}</p>
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form" >
+        <input type="text" class="form-input" placeholder="Enter product name" name="name" ngModel />
+        <input type="text" class="form-input" placeholder="Enter product price" name="price" ngModel />
+        <input type="text" class="form-input" placeholder="Enter product color" name="color" ngModel />
+        <input type="text" class="form-input" placeholder="Enter product category" name="category" ngModel />
+        <textarea type="text" class="form-input" placeholder="Enter product description" name="description" ngModel ></textarea>
+        <input type="text" class="form-input" placeholder="Enter product image url" name="image" ngModel />
+        <button class="form-button">ADD PRODUCT</button>
+    </form>
+</div>
+
+<!-- signu login page nit working addproduct page nt wrking 
+product list is not wrking update product buton is not working-->

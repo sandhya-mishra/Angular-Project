@@ -1,0 +1,454 @@
+{
+  "seller": [
+    {
+      "name": "Sandhya Mishra",
+      "email": "sanya@seller.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "Lucky",
+      "email": "lucky@gmail.com",
+      "password": "asdfgh",
+      "id": 2
+    },
+    {
+      "name": "sandhya",
+      "email": "sandhya@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "tuktuk",
+      "email": "tuktuk@gmail.com",
+      "password": "tuktuk",
+      "id": 4
+    },
+    {
+      "observe": "response",
+      "id": 5
+    },
+    {
+      "name": "Lavika",
+      "email": "lavika21@gmail.com",
+      "password": "lavika123",
+      "id": 6
+    },
+    {
+      "name": "Naina",
+      "email": "naina@gmail.com",
+      "password": "naina",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "color": "Black",
+      "category": "Shoes",
+      "image": "https://navbharattimes.indiatimes.com/apna-bazaar/fashion/footwear/grab-discount-up-to-48-percent-on-best-nike-running-shoes-for-men/thumb/msid-94832174,imgsize-47148,width-1200,height-900,resizemode-75/nike-running-shoes-on-amazon-94832174.jpg",
+      "id": 6
+    },
+    {
+      "name": "Levis jeans",
+      "price": "5000",
+      "color": "Nevy Blue",
+      "category": "Jeans",
+      "description": "",
+      "image": "https://www.levi.in/dw/image/v2/BBRC_PRD/on/demandware.static/-/Sites-LeviMaster-Catalog/en_IN/dw8a43a808/images/hi-res/866590000/866590000_01_Front.jpg?sw=451&sh=600",
+      "id": 7
+    },
+    {
+      "name": "Bata Shoes",
+      "price": "7000",
+      "color": "White",
+      "category": "shoes",
+      "description": "Bata Men's shoes",
+      "image": "https://m.media-amazon.com/images/I/716DsyXNqbL._UL1500_.jpg",
+      "id": 8
+    },
+    {
+      "name": "Bata Shoes",
+      "price": "17000",
+      "color": "brown",
+      "category": "shoes",
+      "description": "Bata Men's shoes",
+      "image": "https://5.imimg.com/data5/TR/FE/MY-11667266/boys-shoes-1000x1000.jpg",
+      "id": 9
+    },
+    {
+      "name": "Noise icon Smart Watch",
+      "price": "6000",
+      "color": "black",
+      "category": "smart watch",
+      "description": "Noise Icon Smart Watch pro2",
+      "image": "http://cdn.shopify.com/s/files/1/0997/6284/products/Black-Qube_497f7144-29ea-429a-a3e2-d9829061c403_grande.png?v=1655378594",
+      "id": 11
+    },
+    {
+      "name": "Women's Gown",
+      "price": "30000",
+      "color": "Pink",
+      "category": "gown",
+      "description": "Women Chiffon Long Dress, Western Wear",
+      "image": "https://5.imimg.com/data5/FN/RC/FJ/ANDROID-78013967/product-jpeg-500x500.jpg",
+      "id": 12
+    },
+    {
+      "name": "Women's Gown",
+      "price": "250000",
+      "color": "Red",
+      "category": "gown",
+      "description": "ANTS Women's Pretty Ball Gown Quinceanera Dress Ruffle Prom Dresses",
+      "image": "https://images-cdn.ubuy.co.in/633dac5c55fcf056003d17fb-women-x27-s-pretty-ball-gown.jpg",
+      "id": 13
+    },
+    {
+      "name": "Perfume Duo",
+      "price": "2,999",
+      "color": "white",
+      "category": "Perfume Duo",
+      "description": "Want to smell like a million bucks this festive season? Befriend our Perfume Deo and get the celebrations started.",
+      "image": "https://cdn.shopify.com/s/files/1/1188/2592/products/PERFUMEDUOBack_1024x.jpg?v=1657218374",
+      "id": 14
+    },
+    {
+      "name": "Perfume for women",
+      "price": "900",
+      "color": "Brown",
+      "category": "Perfume Duo",
+      "description": "It holds a very woody scent and would instantly freshen you up and get you in the right mood before a party or a get-together.",
+      "image": "https://media6.ppl-media.com/mediafiles/blogs/Best_Perfume_For_Women_5d7618496e.PNG",
+      "id": 15
+    },
+    {
+      "name": "Ladies Party Wear Necklace With Jerkin",
+      "price": "2049",
+      "color": "silver",
+      "category": " Necklace",
+      "description": "adorn your neck with beautiful necklaces in silver hues from the trendy collection of choudhary collection brands available only on limeroad to add extra glamour to your style. ",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIzGkVgkyqTB1KWj4RzZ3dIIBJDnpefnaPw&usqp=CAU",
+      "id": 16
+    },
+    {
+      "name": "Cz and ad diamond crystal choker necklace set",
+      "price": "5000",
+      "color": "silver",
+      "category": "necklace",
+      "description": "Silver and gold-toned handcrafted necklace",
+      "image": "https://i.pinimg.com/192x/a2/15/bf/a215bf125fb928c39d91b5369a36da83.jpg",
+      "id": 17
+    },
+    {
+      "name": "Silver & Gold-Toned Oxidised Alloy Handcrafted Necklace",
+      "price": "7000",
+      "color": "blue",
+      "category": "necklace",
+      "description": "This necklace is superb. You can carry this with both indo or western choice is yours. I totally love with Rubans jwellery . They creat statement jwellery so that love to look different and amazing in crowd.. ",
+      "image": "https://i.pinimg.com/736x/27/ce/1b/27ce1b04146579891acaa2eebd2273a5.jpg",
+      "id": 18
+    },
+    {
+      "name": "Silver Pearl",
+      "price": "40,000",
+      "color": "silver",
+      "category": "necklace",
+      "description": "Stunning Necklace Set With Complimenting Dangler Earrings Embellished With Sparkling White Austrian Diamond",
+      "image": "https://i.pinimg.com/564x/72/0e/d3/720ed376b62cd3a4eb265133c0038173.jpg",
+      "id": 19
+    },
+    {
+      "name": "BEST SMART THERMOSTAT",
+      "price": "30,000",
+      "color": "White",
+      "category": "Home Device",
+      "description": "Smart thermostats control your home's temperature automatically, reducing heating and cooling costs and helping achieve optimal climate conditions throughout the year.",
+      "image": "https://www.cnet.com/a/img/resize/31672bdea8516b2ebb12a9e018d06fe3050c5ed3/hub/2021/11/11/95b342b3-bc11-4694-b1dd-b96f8bc6de37/amazon-thermostat-2.jpg?auto=webp&fit=crop&height=528&width=940",
+      "id": 20
+    },
+    {
+      "name": "Stylish handbags for office",
+      "price": "1078",
+      "color": "yellow",
+      "category": "Handbags",
+      "description": "New ladies bag Design by \"MAMMON\"\nMade of PU, Dimension- 28x12x28 CM (LxBxH)",
+      "image": "https://static.toiimg.com/thumb/msid-92597674,imgsize-1920614,width-400,resizemode-4/92597674.jpg",
+      "id": 22
+    }
+  ],
+  "users": [
+    {
+      "name": "nikita",
+      "email": "nikita@gmail.com",
+      "password": "nikita",
+      "id": 1
+    },
+    {
+      "name": "Juilee",
+      "email": "juilee@gmail.com",
+      "password": "juilee",
+      "id": 2
+    },
+    {
+      "name": "Ankita",
+      "email": "ankita12@gmail.com",
+      "password": "ankiita",
+      "id": 3
+    },
+    {
+      "name": "nikita",
+      "email": "nikita@gmail.com",
+      "password": "nikita",
+      "id": 4
+    },
+    {
+      "name": "bruce",
+      "email": "bruce@test.com",
+      "password": "bruce123",
+      "id": 5
+    },
+    {
+      "name": "Naina",
+      "email": "naina@gmail.com",
+      "password": "naina",
+      "id": 6
+    },
+    {
+      "name": "Nidhi Tiwari",
+      "email": "nidhi12@gmail.com",
+      "password": "nidhi123",
+      "id": 7
+    },
+    {
+      "name": "Sara",
+      "email": "sara@gmail.com",
+      "password": "saraalikhan",
+      "id": 8
+    },
+    {
+      "name": "Lucky",
+      "email": "lucky@gmail.com",
+      "password": "lucky",
+      "id": 9
+    },
+    {
+      "name": "NICKY",
+      "email": "nicky@gmail.com",
+      "password": "nickyy",
+      "id": 10
+    },
+    {
+      "name": "Shailja",
+      "email": "shailja12@gmail.com",
+      "password": "shailja",
+      "id": 11
+    },
+    {
+      "name": "Shailja",
+      "email": "shailja12@gmail.com",
+      "password": "shailja",
+      "id": 12
+    },
+    {
+      "name": "Shailja",
+      "email": "shailja12@gmail.com",
+      "password": "shailja",
+      "id": 13
+    }
+  ],
+  "cart": [
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "color": "Black",
+      "category": "Shoes",
+      "image": "https://navbharattimes.indiatimes.com/apna-bazaar/fashion/footwear/grab-discount-up-to-48-percent-on-best-nike-running-shoes-for-men/thumb/msid-94832174,imgsize-47148,width-1200,height-900,resizemode-75/nike-running-shoes-on-amazon-94832174.jpg",
+      "quantity": 4,
+      "userId": 8,
+      "productId": 6,
+      "id": 2
+    },
+    {
+      "name": "Levis jeans",
+      "price": "5000",
+      "color": "Nevy Blue",
+      "category": "Jeans",
+      "image": "https://www.levi.in/dw/image/v2/BBRC_PRD/on/demandware.static/-/Sites-LeviMaster-Catalog/en_IN/dw8a43a808/images/hi-res/866590000/866590000_01_Front.jpg?sw=451&sh=600",
+      "quantity": 3,
+      "userId": 8,
+      "productId": 7,
+      "id": 3
+    },
+    {
+      "name": "Bata Shoes",
+      "price": "7000",
+      "color": "White",
+      "category": "shoes",
+      "description": "Bata Men's shoes",
+      "image": "https://m.media-amazon.com/images/I/716DsyXNqbL._UL1500_.jpg",
+      "quantity": 3,
+      "userId": 8,
+      "productId": 8,
+      "id": 4
+    },
+    {
+      "name": "Noise icon Smart Watch",
+      "price": "6000",
+      "color": "black",
+      "category": "smart watch",
+      "description": "Noise Icon Smart Watch pro2",
+      "image": "http://cdn.shopify.com/s/files/1/0997/6284/products/Black-Qube_497f7144-29ea-429a-a3e2-d9829061c403_grande.png?v=1655378594",
+      "quantity": 2,
+      "userId": 8,
+      "productId": 11,
+      "id": 5
+    },
+    {
+      "name": "Women's Gown",
+      "price": "30000",
+      "color": "Pink",
+      "category": "gown",
+      "description": "Women Chiffon Long Dress, Western Wear",
+      "image": "https://5.imimg.com/data5/FN/RC/FJ/ANDROID-78013967/product-jpeg-500x500.jpg",
+      "quantity": 1,
+      "userId": 8,
+      "productId": 12,
+      "id": 6
+    },
+    {
+      "name": "Noise icon Smart Watch",
+      "price": "6000",
+      "color": "black",
+      "category": "smart watch",
+      "description": "Noise Icon Smart Watch pro2",
+      "image": "http://cdn.shopify.com/s/files/1/0997/6284/products/Black-Qube_497f7144-29ea-429a-a3e2-d9829061c403_grande.png?v=1655378594",
+      "quantity": 2,
+      "userId": 9,
+      "productId": 11,
+      "id": 7
+    },
+    {
+      "name": "Perfume Duo",
+      "price": "2,999",
+      "color": "white",
+      "category": "Perfume Duo",
+      "description": "Want to smell like a million bucks this festive season? Befriend our Perfume Deo and get the celebrations started.",
+      "image": "https://cdn.shopify.com/s/files/1/1188/2592/products/PERFUMEDUOBack_1024x.jpg?v=1657218374",
+      "quantity": 1,
+      "userId": 9,
+      "productId": 14,
+      "id": 8
+    },
+    {
+      "name": "Levis jeans",
+      "price": "5000",
+      "color": "Nevy Blue",
+      "category": "Jeans",
+      "description": "",
+      "image": "https://www.levi.in/dw/image/v2/BBRC_PRD/on/demandware.static/-/Sites-LeviMaster-Catalog/en_IN/dw8a43a808/images/hi-res/866590000/866590000_01_Front.jpg?sw=451&sh=600",
+      "quantity": 3,
+      "userId": 10,
+      "productId": 7,
+      "id": 14
+    },
+    {
+      "name": "Women's Gown",
+      "price": "250000",
+      "color": "Red",
+      "category": "gown",
+      "description": "ANTS Women's Pretty Ball Gown Quinceanera Dress Ruffle Prom Dresses",
+      "image": "https://images-cdn.ubuy.co.in/633dac5c55fcf056003d17fb-women-x27-s-pretty-ball-gown.jpg",
+      "quantity": 5,
+      "userId": 10,
+      "productId": 13,
+      "id": 15
+    },
+    {
+      "name": "Noise icon Smart Watch",
+      "price": "6000",
+      "color": "black",
+      "category": "smart watch",
+      "description": "Noise Icon Smart Watch pro2",
+      "image": "http://cdn.shopify.com/s/files/1/0997/6284/products/Black-Qube_497f7144-29ea-429a-a3e2-d9829061c403_grande.png?v=1655378594",
+      "quantity": 1,
+      "userId": 10,
+      "productId": 11,
+      "id": 17
+    },
+    {
+      "name": "Bata Shoes",
+      "price": "17000",
+      "color": "brown",
+      "category": "shoes",
+      "description": "Bata Men's shoes",
+      "image": "https://5.imimg.com/data5/TR/FE/MY-11667266/boys-shoes-1000x1000.jpg",
+      "quantity": 2,
+      "userId": 10,
+      "productId": 9,
+      "id": 18
+    },
+    {
+      "name": "Women's Gown",
+      "price": "30000",
+      "color": "Pink",
+      "category": "gown",
+      "description": "Women Chiffon Long Dress, Western Wear",
+      "image": "https://5.imimg.com/data5/FN/RC/FJ/ANDROID-78013967/product-jpeg-500x500.jpg",
+      "quantity": 2,
+      "userId": 10,
+      "productId": 12,
+      "id": 19
+    }
+  ],
+  "orders": [
+    {
+      "email": "lucky@gmail.com",
+      "address": "Gurugram",
+      "contact": "9876543210",
+      "totalPrice": 90100,
+      "userId": 8,
+      "id": 1
+    },
+    {
+      "email": "ankita@gmail.com",
+      "address": "Noida, sector 33",
+      "contact": "9876543210",
+      "totalPrice": 90100,
+      "userId": 8,
+      "id": 2
+    },
+    {
+      "email": "ankita@gmail.com",
+      "address": "Noida, sector 33",
+      "contact": "9876543210",
+      "totalPrice": 90100,
+      "userId": 8,
+      "id": 3
+    },
+    {
+      "email": "bruce@test.com",
+      "address": "varanasi",
+      "contact": "7654321098",
+      "totalPrice": 90100,
+      "userId": 8,
+      "id": 4
+    },
+    {
+      "email": "lucky@gmail.com",
+      "address": "Gurugram",
+      "contact": "7654321098",
+      "totalPrice": 100,
+      "userId": 9,
+      "id": 5
+    },
+    {
+      "email": "shailja12@gmail.com",
+      "address": "Ludhiyana, Punjab",
+      "contact": "9876234124",
+      "totalPrice": 60100,
+      "userId": 11,
+      "id": 6
+    }
+  ]
+}

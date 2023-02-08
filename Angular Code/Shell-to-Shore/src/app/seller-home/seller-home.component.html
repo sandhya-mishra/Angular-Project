@@ -1,0 +1,32 @@
+
+<br><div class="product-list">
+    <h1 style="color: white;">ALL PRODUCT LIST</h1>
+    <p class="message-p">{{ProductMessage}}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Color</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <!-- "['/hero', hero.id]" -->
+        <tbody>
+            <tr *ngFor="let item of productList">
+                <td><img src="{{item.image}}" /></td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.color}}</td>
+                <td>{{item.category}}</td>
+                <td>{{item.description}}</td>
+                <td><button (click)="deleteProduct(item.id)">Delete</button>
+                <a routerLink="/seller-update-product/{{item.id}}" class="adjust-update-link"><button>Update Product</button></a></td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="img">
+        <img src="assets/pic.png" alt="logo">
+    </div>
+
+<div class="seller-auth" style="margin-right: 520px;">
+    <div *ngIf="!showLogin" class="sign-up">
+        <br><br> <br><br> <br><br>
+        <h1>S!GN UP</h1>
+        <form action="" class="common-form" #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+            <input type="text" class="form-input" ngModel name="name" placeholder="Enter your Name" />
+            <input type="email" class="form-input" ngModel  name="email" placeholder="Enter your Email" />
+            <input type="password" class="form-input" ngModel name="password" placeholder="Enter your Password" autocomplete="on" />
+            <button class="form-button">S!gn Up</button>
+            <a class="auth-toggle-link" (click)="openLogin()">Already Have Account!!Cl!ck Here to Login</a>
+        </form>
+    </div>
+</div>
+<!--LOGIN AREA-->
+
+<div *ngIf="showLogin" class="login">
+    <br><br> <br>
+    <h1>LOG!N HERE</h1>
+    <p class="error-p">{{authError}}</p>
+    <form  #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+        <input type="email" class="form-input" ngModel  name="email" placeholder="Enter your Email"  />
+        <input type="password" class="form-input" ngModel name="password" placeholder="Enter your Password" autocomplete="on" />
+        <button class="form-button">LOG!N</button>
+        <a class="auth-toggle-link" (click)="openSignUp()">Don't Have Account!!Cl!ck Here to sign-up</a>
+    </form>
+</div>
+
+ </div><!--closing div of container -->
